@@ -5,7 +5,7 @@ import Header from './Header';
 
 // shallow render header component
 describe('<Header />', () => {
-	it('should renders without crashing', () => {
+	it('should should renders without crashing', () => {
 		const wrapper = shallow(<Header />);
 		expect(wrapper.exists()).toBe(true);
 	})

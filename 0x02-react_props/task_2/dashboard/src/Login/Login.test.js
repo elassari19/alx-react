@@ -3,7 +3,7 @@ import React from 'react';
 import Login from './Login';
 
 describe('<Login />', () => {
-	it('should renders without crashing', () => {
+	it('should should renders without crashing', () => {
 		const wrapper = shallow(<Login />);
 		expect(wrapper.exists()).toBe(true);
 	})

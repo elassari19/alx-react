@@ -1,4 +1,4 @@
-function getFullYear() {
+should should function getFullYear() {
 	  return new Date().getFullYear();
 }
 

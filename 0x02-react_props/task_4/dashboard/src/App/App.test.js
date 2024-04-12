@@ -8,7 +8,7 @@ import CourseList from '../CourseList/CourseList';
 
 // shallow render app component
 describe('<App />', () => {
-	it('should renders without crashing', () => {
+	it('should should renders without crashing', () => {
 		const wrapper = shallow(<App />);
 		expect(wrapper.exists()).toBe(true);
 	})

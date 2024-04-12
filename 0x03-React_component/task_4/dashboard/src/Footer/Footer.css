@@ -1,14 +1,8 @@
-:root {
-	--primary-color: #E11D3F;
-	font: 18px Helvetica, Arial, sans-serif;
-}
-
-footer {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	border-top: 3px solid var(--primary-color);
-	padding: 1rem;
-	font-style: italic;
+.App-footer {
+  border-top: 2px solid #e11d3f;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
 }

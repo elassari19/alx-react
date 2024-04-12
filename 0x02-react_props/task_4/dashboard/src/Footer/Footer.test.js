@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 // shallow render footer component
 describe('<Footer />', () => {
-	it('should renders without crashing', () => {
+	it('should should renders without crashing', () => {
 		const wrapper = shallow(<Footer />);
 		expect(wrapper.exists()).toBe(true);
 	})

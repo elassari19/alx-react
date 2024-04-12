@@ -1,10 +1,12 @@
-:root {
-	--primary-color: #E11D3F;
-	font: 18px Helvetica, Arial, sans-serif;
+.App {
+  /* text-align: center; */
 }
 
-.App {
-	background-color: #ffffff;
-	display: flex;
-	flex-direction: column;
+.Header {
+  display: flex;
+  align-items: start;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border-bottom: 2px solid #e11d3f;
 }
+

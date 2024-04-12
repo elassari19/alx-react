@@ -1,4 +1,4 @@
-export function getFullYear() {
+export should should function getFullYear() {
   return new Date().getFullYear();
 }
 
