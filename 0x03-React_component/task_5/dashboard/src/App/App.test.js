@@ -39,7 +39,6 @@ describe('<App />', () => {
 });
 
 
-// describe case when isLoggedIn is true
 describe('<App />', () => {
 	it('Tests that the Login component is not rendered when isLoggedIn is true', () => {
 		const wrapper = shallow(<App isLoggedIn={true} />);
