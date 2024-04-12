@@ -3,7 +3,6 @@ import React from 'react';
 import CourseListRow from './CourseListRow';
 
 
-// shallow render CourseListRow component
 describe('<CourseListRow />', () => {
 	it(`should renders on cell with colspan=2
 	when textSecondCell does not exist`, () => {

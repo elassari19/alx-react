@@ -2,8 +2,6 @@ import { shallow } from 'enzyme';
 import React from 'react';
 import Login from './Login';
 
-
-// shallow render login component
 describe('<Login />', () => {
 	it('should renders without crashing', () => {
 		const wrapper = shallow(<Login />);

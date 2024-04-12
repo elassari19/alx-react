@@ -4,10 +4,6 @@ import propTypes from 'prop-types'
 
 
 const CourseListRow = ({ isHeader, textFirstCell, textSecondCell }) => {
-	// props:
-	// - isHeader: bool, default: false
-	// - textFirstCell: string, required
-	// - textSecondCell: string, default: null
 	if (isHeader) {
 		if (textSecondCell === null) {
 			return <tr><th colSpan="2">{textFirstCell}</th></tr>;
