@@ -23,10 +23,39 @@ const listNotifications = [
 class App extends React.Component {
   constructor(props) {
     super(props);
+		this.state = {
+			login: false
+		};
   }
 
+	componentDidMount() {
+		this.setState({ login: this.props.isLoggedIn });
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener('click', this.handleKeyPress);
+	}
+
+	render() {
+		return (
+			<React.Fragment>
+				<Notifications listNotifications={listNotifications}/>
+				<div className="App">
+					<Header />
+				</div>
+				<div className="App-body">
+					{
+						this.state.login ? <CourseList listCourses={listCourses}/> : <Login />
+					}
+				</div>
+				<div className="App-footer">
+					<Footer />
+				</div>
+			</React.Fragment>
+		);
+	}
+
   render() {
-    const { isLoggedIn } = this.props;
     return (
       <React.Fragment>
         <Notifications listNotifications={listNotifications}/>
@@ -35,7 +64,7 @@ class App extends React.Component {
         </div>
         <div className="App-body">
           {
-            isLoggedIn ? <CourseList listCourses={listCourses}/> : <Login />
+            this.state.login ? <CourseList listCourses={listCourses}/> : <Login />
           }
         </div>
         <div className="App-footer">
