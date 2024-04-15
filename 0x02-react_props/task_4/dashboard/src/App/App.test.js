@@ -6,7 +6,6 @@ import Login from '../Login/Login';
 import CourseList from '../CourseList/CourseList';
 
 
-// shallow render app component
 describe('<App />', () => {
 	it('should should renders without crashing', () => {
 		const wrapper = shallow(<App />);

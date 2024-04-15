@@ -3,7 +3,6 @@ import React from 'react';
 import Header from './Header';
 
 
-// shallow render header component
 describe('<Header />', () => {
 	it('should should renders without crashing', () => {
 		const wrapper = shallow(<Header />);

@@ -3,7 +3,6 @@ import React from 'react';
 import Footer from './Footer';
 
 
-// shallow render footer component
 describe('<Footer />', () => {
 	it('should should renders without crashing', () => {
 		const wrapper = shallow(<Footer />);
