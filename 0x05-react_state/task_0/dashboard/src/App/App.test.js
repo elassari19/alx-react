@@ -11,7 +11,7 @@ describe("<App />", () => {
     StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
   });
 
-  it("App renders without crashing", () => {
+  it("should app renders without crashing", () => {
     const wrapper = shallow(<App />);
     expect(wrapper.exists()).toEqual(true);
   });
@@ -35,7 +35,7 @@ describe("<App />", () => {
     wrapper.update();
     expect(wrapper.find("Footer")).toHaveLength(1);
   });
-  it("CourseList is not displayed with isLoggedIn false by default", () => {
+  it("should CourseList is not displayed with isLoggedIn false by default", () => {
     const wrapper = shallow(<App />);
     wrapper.update();
     expect(wrapper.find("CourseList")).toHaveLength(0);
